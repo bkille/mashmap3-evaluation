@@ -93,7 +93,7 @@ if __name__ == "__main__":
                 latex_str = f"{query} & {pi}% \n\t"
                 for tool in ["mashmap2", "mashmap3"]:
                 # for tool in ["mashmap3"]:
-                    paf_filepath=f"/home/Users/blk6/Contribute/wfmash/output-pafs-nomerge-121/{ref}-{query}/{ref}-{query}.L5000.ss{ss}.p{pi}.{tool}.aligned.paf"
+                    paf_filepath=f"/home/Users/blk6/Contribute/wfmash/output-pafs-nomerge/{ref}-{query}/{ref}-{query}.L5000.ss{ss}.p{pi}.{tool}.aligned.paf"
                     if Path(paf_filepath).exists():
                         # MashMap outputs mutliple mappings when they have the same predicted ANI. 
                         # To avoid oversampling these regions, we only take the first mapping for each segment
